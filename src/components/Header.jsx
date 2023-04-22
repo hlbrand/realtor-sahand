@@ -43,6 +43,13 @@ export default function Header() {
             >
               <Link to="/sign-in">Sign In</Link>
             </li>
+            <li
+              className={`py-3 text-sm font-semibold text-gray-400 border-b-[3px] border-b-transparent ${
+                pathMathRoute('/sign-in') && 'text-black border-b-red-500'
+              }`}
+            >
+              <Link to="/profile">Profile</Link>
+            </li>
           </ul>
         </div>
       </header>
